@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -Wall -Wextra -fconcepts-diagnostics-depth=20 CMakeFiles/basic_test.dir/runtime_test/zipper/basic_test.cpp.o -o basic_test 

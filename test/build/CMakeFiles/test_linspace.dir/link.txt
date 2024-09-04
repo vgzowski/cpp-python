@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -Wall -Wextra -fconcepts-diagnostics-depth=20 CMakeFiles/test_linspace.dir/runtime_test/linspace/test_linspace.cpp.o -o test_linspace 

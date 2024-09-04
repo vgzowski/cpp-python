@@ -1,1 +1,0 @@
-/usr/bin/c++  -O2 -Wall -Wextra -fconcepts-diagnostics-depth=20 CMakeFiles/zipper_static.dir/static_test/zipper/zipper_static.cpp.o -o zipper_static 
