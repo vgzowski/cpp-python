@@ -1,0 +1,8 @@
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/test_linspace.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/test_minmax.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/basic_test.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/move_semantics_test.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/zipper_static.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/run_all_tests.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/edit_cache.dir
+/home/vgzowski/study/cpp-python/test/build/CMakeFiles/rebuild_cache.dir

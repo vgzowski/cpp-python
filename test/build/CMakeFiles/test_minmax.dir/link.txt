@@ -1,0 +1,1 @@
+/usr/bin/c++  -O2 -Wall -Wextra -fconcepts-diagnostics-depth=20 CMakeFiles/test_minmax.dir/runtime_test/minmax/test_minmax.cpp.o -o test_minmax 
