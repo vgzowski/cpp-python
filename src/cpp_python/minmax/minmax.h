@@ -54,6 +54,8 @@ namespace cpp_python {
 	}
 }
 
+#include <iostream>
+
 namespace cpp_python {
 	template <typename Func, std::ranges::range Container>
 		requires cpp_python_concepts::MinimumFuncCont <Container, Func>
@@ -64,7 +66,7 @@ namespace cpp_python {
 			throw std::runtime_error("index_value_min() invoked on an empty sequence");
 		}
 
-		return *result;
+    return *result;
 	}
 
 	template <typename Func, std::ranges::range Container>
@@ -72,6 +74,10 @@ namespace cpp_python {
 	inline decltype(auto) index_value_max(Container&& container, Func&& func) {
 		auto enumerate_container = enumerate(std::forward <Container> (container));
 		auto result = iterator_max(enumerate_container, [func = std::forward <Func> (func)](const auto &x) { return func(x.second); });
+
+    for (auto x : enumerate_container) {
+      std::cout << x.first << " " << x.second << std::endl;
+    }
 
 		if (result == std::ranges::end(enumerate_container)) {
 			throw std::runtime_error("index_value_max() invoked on an empty sequence");

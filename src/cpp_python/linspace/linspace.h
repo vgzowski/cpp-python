@@ -7,7 +7,7 @@ namespace cpp_python {
 	class linspace_iterator {
 	public:
 		using value_type = T;
-		using reference = T&;
+		using reference = T;
 		using pointer = T*;
 		using difference_type = std::ptrdiff_t;
 		using iterator_category = std::input_iterator_tag;

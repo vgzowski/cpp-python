@@ -1,6 +1,7 @@
 #pragma once
 
 #include <ranges>
+#include <type_traits>
 #include <cpp_python_type_traits/cpp_python_type_traits.h>
 
 namespace cpp_python_concepts {
@@ -43,5 +44,9 @@ namespace cpp_python_concepts {
 	};
 
 	template <typename Container, typename Func>
-	concept MinimumFuncCont = MinimumFunc < typename std::remove_reference_t <Container> :: value_type, Func >;
+	concept MinimumFuncCont = MinimumFunc <
+    decltype(*std::ranges::begin(std::declval <
+      std::add_lvalue_reference_t < std::remove_reference_t <Container> >
+    > ())),
+  Func >;
 }

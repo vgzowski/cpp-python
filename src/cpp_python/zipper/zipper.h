@@ -34,7 +34,7 @@ namespace cpp_python {
         return copy;
       }
 
-      reference operator * () const {
+      reference operator * () {
         return { *ptr_.first, *ptr_.second };
       }
       pointer operator -> () {
